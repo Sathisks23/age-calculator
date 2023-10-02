@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="center">
+      <div class="entries">
+
+        <div class="entry">
+          <label id="date_label" for="date_input"> Day</label>
+          <input id="date_input" onblur="getval_date()" placeholder="DD" type="number">
+          <small id="date_small"></small>
+        </div>
+
+        <div class="entry">
+          <label id="month_label" for="MM"> Month</label>
+          <input id="month_input" onblur="getval_month()" placeholder="MM" type="number"> 
+          <small id="month_small"></small>
+        </div>
+
+        <div class="entry">
+          <label id="year_label" for="YYYY">Year</label>
+          <input id="year_input" onblur="getval_year()" placeholder="YYYY" type="number">
+          <small id="year_small"></small>
+        </div>
+        
+        <div class="arrow"  onclick="output()">
+         <img src="/assets/images/icon-arrow.svg" alt="">
+        </div>
+       
+      </div>
+      <div class="outputs">
+         <div> <p class="ot"  id="year_output">- -</p> <h1>years</h1></div>
+          <div><p class="ot" id="month_output">- -</p> <h1 >months</h1></div>
+         <div> <p class="ot" id="date_output">- -</p>   <h1>days</h1></div>
+      </div>
+    </div>
+
+  </div>
+ 
+ 
+
+ 
+  
+
+  
+ 
+
+ 
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sathish Kumar Shanmugam</a>.
+  </div>
+
+  <script src="/script.js"></script>
+
+  
+</body>
+</html>
